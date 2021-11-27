@@ -30,11 +30,10 @@ $ git clone https://github.com/sudoRicheek/amdahls-vandals
 ```
 $ cd ChampSim/
 ```
-4. Build the ChampSim simulator using the branch predictor to be used.
+4. Build the ChampSim simulator using the branch predictor to be used, replacing `<predictor>` with either `tage` or `ltage`, or any other predictor present in ChampSim.
 ```
 $ ./build_champsim.sh <predictor> no no no no lru 1
 ```
-replacing `<predictor>` with either `tage` or `ltage`, or any other predictor present in ChampSim.\
 5. Run the simulator on a trace of your choice.
 ```
 $ ./run_champsim.sh <predictor>-no-no-no-no-lru-1core 10 10 <trace-filename>
